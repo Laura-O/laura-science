@@ -24,12 +24,19 @@ layout: blog
 
                 </time>
             </p>
+            <div>
+                {% for tag in post.data.tags | filterTagList %}
+                    {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+                        <a class="px-2 py-1 bg-charcoal text-gray-100 font-bold rounded hover:bg-persian-green" href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+                {% endfor %}
+            </div>
+            <div>
             {% if post.data.description %}
                 <p class="text-lg text-gray-500 mb-3">
                     {{ post.data.description }}
                 </p>
             {% endif %}
-
+            </div>
             <p>
                 <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg">
                     Read more →
