@@ -16,32 +16,36 @@ layout: blog
                     {% endif %}
                 </a>
             </h2>
-            <p class="text-base leading-6 text-gray-500 mb-3">
-                <time>
-                    {{ post.date | readableDate }}
-                    by
-                    <a>{{ post.data.author }}</a>
+            <div>            
+                <p class="text-base leading-6 text-gray-500 mb-3">
+                    <time>
+                        {{ post.date | readableDate }}
+                        by
+                        <a>{{ post.data.author }}</a>
 
-                </time>
-            </p>
-            <div>
+                    </time>
+                </p>
+            </div>
+            <div class="pb-4">
                 {% for tag in post.data.tags | filterTagList %}
                     {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
-                        <a class="px-2 py-1 bg-charcoal text-gray-100 font-bold rounded hover:bg-persian-green" href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+                        <a class="px-2 py-1 bg-persian-green text-white font-bold rounded hover:bg-burnt-sienna" href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
                 {% endfor %}
             </div>
             <div>
-            {% if post.data.description %}
-                <p class="text-lg text-gray-500 mb-3">
-                    {{ post.data.description }}
-                </p>
-            {% endif %}
+                {% if post.data.description %}
+                    <p class="text-lg text-charcoal-500 mb-3">
+                        {{ post.data.description }}
+                    </p>
+                {% endif %}
             </div>
-            <p>
-                <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg">
-                    Read more →
-                </a>
-            </p>
+            <div>
+                <p>
+                    <a href="{{ post.url | url }}" class="text-charcoal-500 font-bold text-lg transition duration-150 border-b-4 border-transparent hover:border-burnt-sienna">
+                        Read more →
+                    </a>
+                </p>
+            </div>
 
         </article>
     {% endfor %}
