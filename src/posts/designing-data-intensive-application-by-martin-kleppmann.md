@@ -4,7 +4,8 @@ description: The goto book for getting into Data Engineering.
 author: Laura Ohrndorf
 date: 2022-07-31T11:06:29.110Z
 tags:
-  - Tags
+  - data engineering
+  - books
 ---
 For most data-related topics there is a modern classic. For Data Warehouses it's The Data Warehouse Toolkit by Ralph Kimball, for Machine Learning it's probably "Pattern Recognition and Machine Learning" by Christopher M. Bishop and for anything related to handling data it's "Designing Data-Intensive Applications" by Martin Kleppmann.
 
