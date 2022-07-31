@@ -15,10 +15,10 @@ module.exports = {
         'bubble-gum': '#ff77e9',
         'bermuda': '#78dcca',
         'charcoal': '#264653',
-        'persian-green': '#2A9D8F',
-        'mayze-crayola': '#E9C46A',
-        'sandy-brown': '#F4A261',
-        'burnt-sienna': '#E76F51'
+        'persiangreen': '#2A9D8F',
+        'mayzecrayola': '#E9C46A',
+        'sandybrown': '#F4A261',
+        'burntsienna': '#E76F51'
       },
       typography: (theme) => ({
         DEFAULT: {

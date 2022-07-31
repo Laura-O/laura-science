@@ -8,4 +8,6 @@ items:
     url: "/about"
   - text: Resume
     url: "/resume"
+  - text: Contact
+    url: "/contact"
   
